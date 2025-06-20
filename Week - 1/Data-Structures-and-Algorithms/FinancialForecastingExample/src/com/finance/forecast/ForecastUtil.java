@@ -2,7 +2,6 @@ package com.finance.forecast;
 
 public class ForecastUtil {
 
-    // Recursive method to calculate future value
     public static double futureValue(double presentValue, double growthRate, int years) {
         if (years == 0) {
             return presentValue;
@@ -10,7 +9,6 @@ public class ForecastUtil {
         return futureValue(presentValue * (1 + growthRate), growthRate, years - 1);
     }
 
-    // Optimized using memoization (optional)
     public static double futureValueMemo(double presentValue, double growthRate, int years, Double[] memo) {
         if (years == 0) return presentValue;
         if (memo[years] != null) return memo[years];

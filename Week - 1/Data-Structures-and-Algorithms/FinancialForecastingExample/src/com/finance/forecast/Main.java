@@ -7,11 +7,11 @@ public class Main {
         int years = 5;
 
         double forecast = ForecastUtil.futureValue(presentValue, growthRate, years);
-        System.out.println("📈 Predicted Future Value (Recursive): " + forecast);
+        System.out.println("Predicted Future Value (Recursive): " + forecast);
 
         
         Double[] memo = new Double[years + 1];
         double forecastMemo = ForecastUtil.futureValueMemo(presentValue, growthRate, years, memo);
-        System.out.println("⚡ Optimized Future Value (Memoized): " + forecastMemo);
+        System.out.println("Optimized Future Value (Memoized): " + forecastMemo);
     }
 }

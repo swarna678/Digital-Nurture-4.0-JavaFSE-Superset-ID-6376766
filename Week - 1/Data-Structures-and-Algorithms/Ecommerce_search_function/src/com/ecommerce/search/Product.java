@@ -13,6 +13,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product ID: " + productId + ", Name: " + productName + ", Category: " + category;
+        return "Products ID: " + productId + ", Name: " + productName + ", Category: " + category;
     }
 }

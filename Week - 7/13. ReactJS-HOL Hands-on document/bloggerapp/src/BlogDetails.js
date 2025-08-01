@@ -13,7 +13,6 @@ function BlogDetails({ blogs }) {
         {blogs.map((blog) => (
           <li key={blog.id} className="list-item">
             <h3 className="item-title">{blog.title}</h3>
-           
             <p className="item-content">{blog.content}</p>
           </li>
         ))}
